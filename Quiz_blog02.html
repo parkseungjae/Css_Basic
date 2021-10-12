@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#wrap {
+	width: 500px;
+	margin: auto;
+}
+
+.header {
+	display: flex;
+}
+
+.header h1 {
+	width: 100%;
+	text-align: center;
+}
+
+.img {
+	width: 100px;
+	height: 100px;
+	box-shadow: 10px 10px 15px black;
+}
+
+.img2 {
+	width: 100px;
+	height: 100px;
+}
+
+nav ul {
+	list-style: none;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	/*display:flex = 가로로정렬*/
+}
+
+nav ul li {
+	margin: 13 0px;
+	padding: 10px 10px;
+}
+
+nav ul li a {
+	background-color: blue;
+	padding: 8px;
+	text-decoration: none;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: white;
+	padding-bottom: 3px;
+	border-bottom: 1px solid orange;
+	transition: all 0.25s;
+}
+
+.content {
+	display: flex;
+}
+
+.content_1 {
+	width: 20%;
+	background-color: aqua;
+}
+
+.content_2 {
+	width: 50%;
+	background-color: gray;
+}
+
+.content_3 {
+	width: 30%;
+	background-color: fuchsia;
+}
+</style>
+</head>
+<body>
+	<div id='wrap'>
+		<div class="header">
+			<img class="img" src="resources/images/맛집.png">
+			<h1>맛집 탐방</h1>
+		</div>
+		<div class="nav">
+			<nav style="background-color: skyblue;">
+				<ul>
+					<li><a href="#q1">HOME</a></li>
+					<li><a href="#q2">게시판</a></li>
+					<li><a href="#q3">내정보</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="content_1">
+				1 <img class="img2" src="resources/images/l_정우성.jpg"> <img
+					class="img2" src="resources/images/맛집.png">
+
+			</div>
+			<div class="content_2">
+				<div>&lt; 오늘의 맛집 &gt;</div>
+				<div>
+				
+					<div style="display: flex;">
+						<div>내용1111111111111111</div>
+						<img align="right" width="50px" height="50px"
+							src="resources/images/맛집.png">
+
+					</div>
+					
+					<div style="display: flex;">
+						<div>내용22222222222222222222</div>
+						<img align="right" width="50px" height="50px"
+							src="resources/images/맛집.png">
+
+					</div>
+					
+					<div style="display: flex;">
+						<div></div>
+						<img align="right" width="50px" height="50px"
+							src="resources/images/맛집.png">
+
+					</div>
+				</div>
+			</div>
+			<div class="content_3">3</div>
+		</div>
+		<div class="footer">바닥</div>
+
+	</div>
+</body>
+</html>

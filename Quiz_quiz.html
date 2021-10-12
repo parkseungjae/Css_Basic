@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.q1 {
+	color: green;
+}
+
+.q2 {
+	color: blue;
+}
+
+.q3 {
+	color: red;
+}
+
+.q4 {
+	color: purple;
+}
+
+input:focus {
+	background-color: blue;
+}
+
+nav ul {
+	list-style: none;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	/*display:flex = 가로로정렬*/
+}
+
+nav ul li {
+	margin: 13 0px;
+	padding: 10px 10px;
+}
+
+nav ul li a {
+	background-color: blue;
+	padding: 8px;
+	text-decoration: none;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: white;
+	padding-bottom: 3px;
+	border-bottom: 1px solid orange;
+	transition: all 0.25s;
+}
+
+
+
+
+.re {
+	color: white;
+}
+
+.click:active+.re {
+	background-color: gray;
+}
+</style>
+
+</head>
+<body>
+
+
+
+	<div style="width: 800px; margin: 0 auto;">
+		<nav style="background-color: skyblue;">
+			<ul>
+				<li><a href="#q1">1번 문제로 이동</a></li>
+				<li><a href="#q2">2번 문제로 이동</a></li>
+				<li><a href="#q3">3번 문제로 이동</a></li>
+				<li><a href="#q4">4번 문제로 이동</a></li>
+			</ul>
+		</nav>
+		<br> <img src="img/UCLwinner.jpg" height="200px" width="100%">
+		<hr>
+		<h2>정답 확인 클랙시 정답 보여짐</h2>
+		<br>
+		<hr>
+		<h2 class="q1" id="q1">문제 1) 첼시의 주장은?</h2>
+		<br>
+		<div>
+			정답 작성 <input type="text"> <label class="click">정답 클릭
+				확인</label> <label class="re">아스필리쿠에타</label>
+		</div>
+		<hr>
+		<h2 class="q2" id="q2">문제 2) 첼시의 1680억 이적료를 발생시킨 공격수는?</h2>
+		<br>
+		<div>
+			정답 작성 <input type="text"> <a class="a2">정답 클릭 확인</a> <label
+				class="re">jsp,django,php 등</label>
+		</div>
+		<hr>
+		<h2 class="q3" id="q3">문제 3) 런던의 왕은?</h2>
+		<br>
+		<div>
+			정답 작성 <input type="text"> <a class="a3">정답 클릭 확인</a> <label
+				id="an3">jsp,django,php 등</label>
+		</div>
+		<hr>
+		<h2 class="q4" id="q4">문제 4) 정적 언어는?</h2>
+		<br>
+		<div>
+			정답 작성 <input type="text"> <a class="a4">정답 클릭 확인</a> <label>jsp,django,php
+				등</label>
+		</div>
+		<hr>
+	</div>
+</body>
+</html>
